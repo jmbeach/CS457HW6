@@ -1,0 +1,192 @@
+mongo CS457 < commands.js
+MongoDB shell version: 3.0.7
+connecting to: CS457
+30
+
+QUESTION1
+
+11351
+
+QUESTION2
+
+{
+	"_id" : ObjectId("5706ff825413d466678e0127"),
+	"id" : "2489669762",
+	"type" : "PublicEvent",
+	"actor" : {
+		"id" : 3429763,
+		"login" : "mdzhang",
+		"gravatar_id" : "",
+		"url" : "https://api.github.com/users/mdzhang",
+		"avatar_url" : "https://avatars.githubusercontent.com/u/3429763?"
+	},
+	"repo" : {
+		"id" : 25602892,
+		"name" : "mdzhang/scheduling_service",
+		"url" : "https://api.github.com/repos/mdzhang/scheduling_service"
+	},
+	"payload" : {
+		
+	},
+	"public" : true,
+	"created_at" : "2015-01-01T15:40:33Z"
+}
+{
+	"_id" : ObjectId("5706ff825413d466678e08c5"),
+	"id" : "2489674513",
+	"type" : "PublicEvent",
+	"actor" : {
+		"id" : 6943927,
+		"login" : "mattshaffer11",
+		"gravatar_id" : "",
+		"url" : "https://api.github.com/users/mattshaffer11",
+		"avatar_url" : "https://avatars.githubusercontent.com/u/6943927?"
+	},
+	"repo" : {
+		"id" : 28688594,
+		"name" : "mattshaffer11/vimConfig",
+		"url" : "https://api.github.com/repos/mattshaffer11/vimConfig"
+	},
+	"payload" : {
+		
+	},
+	"public" : true,
+	"created_at" : "2015-01-01T15:50:23Z"
+}
+
+QUESTION3
+
+{
+	"_id" : ObjectId("5706ff825413d466678e0127"),
+	"id" : "2489669762",
+	"type" : "PublicEvent",
+	"actor" : {
+		"id" : 3429763,
+		"login" : "mdzhang",
+		"gravatar_id" : "",
+		"url" : "https://api.github.com/users/mdzhang",
+		"avatar_url" : "https://avatars.githubusercontent.com/u/3429763?"
+	},
+	"repo" : {
+		"id" : 25602892,
+		"name" : "mdzhang/scheduling_service",
+		"url" : "https://api.github.com/repos/mdzhang/scheduling_service"
+	},
+	"payload" : {
+		
+	},
+	"public" : true,
+	"created_at" : "2015-01-01T15:40:33Z"
+}
+{
+	"_id" : ObjectId("5706ff825413d466678e08c5"),
+	"id" : "2489674513",
+	"type" : "PublicEvent",
+	"actor" : {
+		"id" : 6943927,
+		"login" : "mattshaffer11",
+		"gravatar_id" : "",
+		"url" : "https://api.github.com/users/mattshaffer11",
+		"avatar_url" : "https://avatars.githubusercontent.com/u/6943927?"
+	},
+	"repo" : {
+		"id" : 28688594,
+		"name" : "mattshaffer11/vimConfig",
+		"url" : "https://api.github.com/repos/mattshaffer11/vimConfig"
+	},
+	"payload" : {
+		
+	},
+	"public" : true,
+	"created_at" : "2015-01-01T15:50:23Z"
+}
+
+QUESTION4
+
+61
+
+QUESTION5
+
+{ "actor" : { "id" : 10221298, "login" : "Applier" } }
+{ "actor" : { "id" : 1096786, "login" : "FKint" } }
+{ "actor" : { "id" : 182589, "login" : "KateAdams" } }
+{ "actor" : { "id" : 2870672, "login" : "MrWitt" } }
+{ "actor" : { "id" : 2870672, "login" : "MrWitt" } }
+{ "actor" : { "id" : 4202614, "login" : "Raiseupcreativity" } }
+{ "actor" : { "id" : 1262317, "login" : "ToOLs-PL" } }
+{ "actor" : { "id" : 9945039, "login" : "VasiliAnoshin" } }
+{ "actor" : { "id" : 1086194, "login" : "adrai" } }
+{ "actor" : { "id" : 19102, "login" : "andreww" } }
+{ "actor" : { "id" : 5868195, "login" : "aquakiss" } }
+{ "actor" : { "id" : 8725981, "login" : "bitsch" } }
+{ "actor" : { "id" : 7246669, "login" : "casanovatoy" } }
+{ "actor" : { "id" : 7246669, "login" : "casanovatoy" } }
+{ "actor" : { "id" : 429310, "login" : "drange" } }
+{ "actor" : { "id" : 3625244, "login" : "ghaiklor" } }
+{ "actor" : { "id" : 136109, "login" : "hij1nx" } }
+{ "actor" : { "id" : 6288080, "login" : "ismcodes" } }
+{ "actor" : { "id" : 2175262, "login" : "jaeming" } }
+{ "actor" : { "id" : 10362114, "login" : "tdkhoa110802" } }
+{ "actor" : { "id" : 1004324, "login" : "tkellen" } }
+{ "actor" : { "id" : 7050846, "login" : "weini37" } }
+{ "actor" : { "id" : 6651691, "login" : "wildfire001" } }
+{ "actor" : { "id" : 3295929, "login" : "yanghonglin" } }
+{ "actor" : { "id" : 3295929, "login" : "yanghonglin" } }
+
+QUESTION6
+
+{ "actor" : { "id" : 1086194 }, "repo" : { "name" : "adrai/sensortag-visualization" } }
+{ "actor" : { "id" : 136109 }, "repo" : { "name" : "hij1nx/level-2pc" } }
+{ "actor" : { "id" : 19102 }, "repo" : { "name" : "andreww/close-enough-for-scientific-work" } }
+{ "actor" : { "id" : 1096786 }, "repo" : { "name" : "FKint/ArduinoSnake" } }
+{ "actor" : { "id" : 1004324 }, "repo" : { "name" : "tkellen/node-rechoir" } }
+{ "actor" : { "id" : 182589 }, "repo" : { "name" : "KateAdams/LuaBinding" } }
+{ "actor" : { "id" : 429310 }, "repo" : { "name" : "drange/ElFish" } }
+
+QUESTION7
+
+{ "actor" : { "id" : 10362114 }, "repo" : { "name" : "tdkhoa110802/Testing" } }
+{ "actor" : { "id" : 1086194 }, "repo" : { "name" : "adrai/sensortag-visualization" } }
+{ "actor" : { "id" : 136109 }, "repo" : { "name" : "hij1nx/level-2pc" } }
+{ "actor" : { "id" : 19102 }, "repo" : { "name" : "andreww/close-enough-for-scientific-work" } }
+{ "actor" : { "id" : 1096786 }, "repo" : { "name" : "FKint/ArduinoSnake" } }
+{ "actor" : { "id" : 10221298 }, "repo" : { "name" : "Applier/restricted" } }
+{ "actor" : { "id" : 1004324 }, "repo" : { "name" : "tkellen/node-rechoir" } }
+{ "actor" : { "id" : 182589 }, "repo" : { "name" : "KateAdams/LuaBinding" } }
+{ "actor" : { "id" : 429310 }, "repo" : { "name" : "drange/ElFish" } }
+
+QUESTION8
+
+426
+
+QUESTION9
+
+false
+
+QUESTION10
+
+{ "id" : "2489678842" }
+
+QUESTION11
+
+2489678844
+
+QUESTION12
+
+{ "_id" : "closed", "maxId" : 35417 }
+{ "_id" : "open", "maxId" : 35420 }
+{ "_id" : null, "maxId" : null }
+
+QUESTION13
+
+{ "_id" : "open", "maxId" : 35420 }
+{ "_id" : "closed", "maxId" : 35417 }
+{ "_id" : null, "maxId" : null }
+
+QUESTION14
+
+{ "_id" : "closed", "totalRequests" : 276964 }
+{ "_id" : "open", "totalRequests" : 192780 }
+{ "_id" : null, "totalRequests" : 0 }
+bye
+./logerr.sh
