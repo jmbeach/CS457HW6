@@ -107,31 +107,31 @@ QUESTION4
 
 QUESTION5
 
-{ "actor" : { "id" : 10221298, "login" : "Applier" } }
-{ "actor" : { "id" : 1096786, "login" : "FKint" } }
-{ "actor" : { "id" : 182589, "login" : "KateAdams" } }
-{ "actor" : { "id" : 2870672, "login" : "MrWitt" } }
-{ "actor" : { "id" : 2870672, "login" : "MrWitt" } }
-{ "actor" : { "id" : 4202614, "login" : "Raiseupcreativity" } }
-{ "actor" : { "id" : 1262317, "login" : "ToOLs-PL" } }
-{ "actor" : { "id" : 9945039, "login" : "VasiliAnoshin" } }
-{ "actor" : { "id" : 1086194, "login" : "adrai" } }
-{ "actor" : { "id" : 19102, "login" : "andreww" } }
-{ "actor" : { "id" : 5868195, "login" : "aquakiss" } }
-{ "actor" : { "id" : 8725981, "login" : "bitsch" } }
-{ "actor" : { "id" : 7246669, "login" : "casanovatoy" } }
-{ "actor" : { "id" : 7246669, "login" : "casanovatoy" } }
-{ "actor" : { "id" : 429310, "login" : "drange" } }
-{ "actor" : { "id" : 3625244, "login" : "ghaiklor" } }
-{ "actor" : { "id" : 136109, "login" : "hij1nx" } }
-{ "actor" : { "id" : 6288080, "login" : "ismcodes" } }
-{ "actor" : { "id" : 2175262, "login" : "jaeming" } }
-{ "actor" : { "id" : 10362114, "login" : "tdkhoa110802" } }
-{ "actor" : { "id" : 1004324, "login" : "tkellen" } }
-{ "actor" : { "id" : 7050846, "login" : "weini37" } }
-{ "actor" : { "id" : 6651691, "login" : "wildfire001" } }
-{ "actor" : { "id" : 3295929, "login" : "yanghonglin" } }
-{ "actor" : { "id" : 3295929, "login" : "yanghonglin" } }
+{ "payload" : { "member" : { "login" : "DSRainy", "id" : 7234857 } } }
+{ "payload" : { "member" : { "login" : "jackson1604", "id" : 8214757 } } }
+{ "payload" : { "member" : { "login" : "jamuhl", "id" : 977772 } } }
+{ "payload" : { "member" : { "login" : "Schumi09", "id" : 2833183 } } }
+{ "payload" : { "member" : { "login" : "Simon90", "id" : 2844711 } } }
+{ "payload" : { "member" : { "login" : "setu1421", "id" : 8182937 } } }
+{ "payload" : { "member" : { "login" : "codeschool-kiddo", "id" : 7882662 } } }
+{ "payload" : { "member" : { "login" : "codeschool-kiddo", "id" : 7882662 } } }
+{ "payload" : { "member" : { "login" : "reporobot", "id" : 6313872 } } }
+{ "payload" : { "member" : { "login" : "jatindhankhar", "id" : 2412081 } } }
+{ "payload" : { "member" : { "login" : "Dame17", "id" : 6367394 } } }
+{ "payload" : { "member" : { "login" : "wiesi12", "id" : 1355966 } } }
+{ "payload" : { "member" : { "login" : "ekristen", "id" : 48329 } } }
+{ "payload" : { "member" : { "login" : "ArielLichter", "id" : 9945757 } } }
+{ "payload" : { "member" : { "login" : "jwookey", "id" : 785889 } } }
+{ "payload" : { "member" : { "login" : "karel1980", "id" : 153021 } } }
+{ "payload" : { "member" : { "login" : "antonow", "id" : 7776175 } } }
+{ "payload" : { "member" : { "login" : "JadeBoumaza", "id" : 10339803 } } }
+{ "payload" : { "member" : { "login" : "silkentrance", "id" : 6068824 } } }
+{ "payload" : { "member" : { "login" : "Mailaender", "id" : 756669 } } }
+{ "payload" : { "member" : { "login" : "matstc", "id" : 58882 } } }
+{ "payload" : { "member" : { "login" : "globile", "id" : 1997239 } } }
+{ "payload" : { "member" : { "login" : "liuqiang2006", "id" : 10336541 } } }
+{ "payload" : { "member" : { "login" : "HannahAmanda", "id" : 5169103 } } }
+{ "payload" : { "member" : { "login" : "DSRainy", "id" : 7234857 } } }
 
 QUESTION6
 
@@ -185,8 +185,19 @@ QUESTION13
 
 QUESTION14
 
-{ "_id" : "closed", "totalRequests" : 276964 }
-{ "_id" : "open", "totalRequests" : 192780 }
-{ "_id" : null, "totalRequests" : 0 }
+[
+	{
+		"payload.pull_request.state" : null,
+		"total" : 10741
+	},
+	{
+		"payload.pull_request.state" : "open",
+		"total" : 381
+	},
+	{
+		"payload.pull_request.state" : "closed",
+		"total" : 229
+	}
+]
 bye
 ./logerr.sh

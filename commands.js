@@ -14,9 +14,9 @@ while(questionThreeCursor.hasNext()) {
 // #4
 print("\nQUESTION4\n");
 db.HW6.find({type:"GollumEvent"}).count()
-// #5
+// #5 - List the member login and member id of the payload for members who have an event type of MemberEvent, and use the cursor sort to sort the result by the member's login.
 print("\nQUESTION5\n");
-db.HW6.find({type:"MemberEvent"},{"actor.login":1, "actor.id":1,"_id":0}).sort({"actor.login":1})
+db.HW6.find({type:"MemberEvent"},{"payload.member.login":1, "payload.member.id":1,"_id":0}).sort({"payload.member.login":1})
 // #6 - For all type Member Events that have an actor id < 1200000, list its actor id and repo name.
 print("\nQUESTION6\n");
 db.HW6.find({type:"MemberEvent","actor.id":{$lt:1200000}},{"actor.id":1,"repo.name":1,"_id":0})
@@ -49,6 +49,12 @@ db.HW6.aggregate([
 ]).pretty();
 print("\nQUESTION14\n");
 // #14 - Using the single purpose aggregation operation of group, group the documents by payload pull_request state to count the number of occurrences of each payload pull_request state.  Print each payload pull_request state  and its count.  There is an example of this in the MongoDB documentation - look for Single Purpose Aggregation Operations. You just have to tweak it a little.
-db.HW6.aggregate([
-	{$group: {_id:"$payload.pull_request.state",totalRequests:{$sum:"$payload.number"}}}
-]).pretty();
+db.HW6.group(
+	{
+		key: { "payload.pull_request.state":1 }
+		,reduce: function(curr,result) {
+			result.total += 1
+		}
+		,initial: {total: 0}
+	}
+)
