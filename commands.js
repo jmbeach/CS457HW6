@@ -39,12 +39,12 @@ print(questionElevenCursor[0].id)
 // #12 - Using pipeline aggregation, group the documents by payload pull_request state to find the maximum value of the payload issue number.  Print each payload pull_request state and its maximum value.
 print("\nQUESTION12\n");
 db.HW6.aggregate([
-	{$group: {_id:"$payload.pull_request.state",maxId:{$max:"$payload.number"}}}
+	{$group: {_id:"$payload.pull_request.state",maxId:{$max:"$payload.issue.number"}}}
 ]).pretty();
 // #13 - Use the aggregate sort to order the result from question 12. by payload pull_request state.
 print("\nQUESTION13\n");
 db.HW6.aggregate([
-	{$group: {_id:"$payload.pull_request.state",maxId:{$max:"$payload.number"}}}
+	{$group: {_id:"$payload.pull_request.state",maxId:{$max:"$payload.issue.number"}}}
 	,{$sort: {_id:-1}}
 ]).pretty();
 print("\nQUESTION14\n");
